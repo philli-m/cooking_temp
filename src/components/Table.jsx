@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Table(props) {
+const Table = (props) => {
   return (
     <>
       <h1>{props.header}</h1>
@@ -24,3 +24,5 @@ export default function Table(props) {
     </>
   )
 }
+
+export default Table

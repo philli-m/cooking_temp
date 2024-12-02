@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-export default function TempInput(props) {
+const TempInput = (props) => {
   return (
     <>
       <form>
@@ -9,7 +9,7 @@ export default function TempInput(props) {
             id='tempInput'
             type='number'
             value={props.handleInputChange}
-            placeholder='tempreture'
+            placeholder={props.placeholder}
           />
           {props.label}
         </label>
@@ -22,3 +22,5 @@ export default function TempInput(props) {
     </>
   )
 }
+
+export default TempInput

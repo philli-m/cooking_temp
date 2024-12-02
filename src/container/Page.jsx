@@ -1,9 +1,12 @@
-import Table from "../components/Table";
+import React, { useState } from 'react'
+
 import TempInput from "../components/TempInput";
+import Table from '../components/Table';
 
-import React from 'react'
 
-export default function Page() {
+const Page = () => {
+  const [temp, setTemp] = useState(null)
+  const [result, setResult] = useState(null)
   const data = [
     { fah: 0, cen: 30 },
     { fah: 0, cel: 30 },
@@ -12,10 +15,26 @@ export default function Page() {
     { fah: 0, cel: 30 }
   ];
 
+  const handleInputChange = () => {
+    setTemp = e.target.value
+  }
+
+  const calculateTemp = (e) => {
+    if (temp != null) {
+      setResult = (inputTemp-32)*(1.8)
+    } else {
+      setResult = null
+    }
+    console.log(result)
+    return result
+  }
+
   return (
     <div className='container'>
-      <Table header='' data={data} head1='' head2='' caption=''/>
-      <TempInput label='' btnString='' calculateTemp={} handleInputChange={} result={}/>
+      <TempInput label='' btnString='' calculateTemp={calculateTemp} handleInputChange={handleInputChange} result={result}/>
+      <Table />
     </div>
   )
 }
+
+export default Page
