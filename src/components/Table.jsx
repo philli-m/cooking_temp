@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
 const Table = (props) => {
   return (
-    <>
+    <section>
       <h1>{props.header}</h1>
       <table>
         <caption>{props.caption}</caption>
@@ -14,15 +14,15 @@ const Table = (props) => {
         </thead>
         <tbody>
           {props.data.map((row, index) => (
-            <tr key={row.index}>
-              <td>{row.cel}</td>
+            <tr key={index}>
               <td>{row.fah}</td>
+              <td>{row.cel}</td>
             </tr>
           ))}
         </tbody>
       </table>
-    </>
-  )
-}
+    </section>
+  );
+};
 
-export default Table
+export default Table;

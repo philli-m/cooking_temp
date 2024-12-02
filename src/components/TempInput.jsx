@@ -1,26 +1,28 @@
-import React from 'react'
+import React from "react";
 
 const TempInput = (props) => {
   return (
-    <>
+    <section>
       <form>
         <label>
+          {props.label}
           <input
-            id='tempInput'
-            type='number'
-            value={props.handleInputChange}
+            id={props.id}
+            type="number"
+            onChange={props.handleInputChange}
             placeholder={props.placeholder}
           />
-          {props.label}
         </label>
 
         <button onClick={props.calculateTemp}>{props.btnString}</button>
       </form>
-      {props.result !== null ?
-        (<p>Result: {props.result}</p>) : null
-      }
-    </>
-  )
-}
+      {props.result !== null ? (
+        <p>Result: <strong>{props.result}</strong></p>
+      ) : (
+        <p>Please enter a valid number</p>
+      )}
+    </section>
+  );
+};
 
-export default TempInput
+export default TempInput;
