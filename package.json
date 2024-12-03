@@ -2,6 +2,7 @@
   "name": "temp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://philli-m.github.io/cooking_temp",
   "dependencies": {
     "@picocss/pico": "^2.0.6",
     "@testing-library/jest-dom": "^5.17.0",
