@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cooking_temp/static/css/main.9821d37e.css",
-    "main.js": "/cooking_temp/static/js/main.4191e802.js",
+    "main.js": "/cooking_temp/static/js/main.42efc54d.js",
     "static/js/453.2db569a6.chunk.js": "/cooking_temp/static/js/453.2db569a6.chunk.js",
     "index.html": "/cooking_temp/index.html",
     "main.9821d37e.css.map": "/cooking_temp/static/css/main.9821d37e.css.map",
-    "main.4191e802.js.map": "/cooking_temp/static/js/main.4191e802.js.map",
+    "main.42efc54d.js.map": "/cooking_temp/static/js/main.42efc54d.js.map",
     "453.2db569a6.chunk.js.map": "/cooking_temp/static/js/453.2db569a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9821d37e.css",
-    "static/js/main.4191e802.js"
+    "static/js/main.42efc54d.js"
   ]
 }
